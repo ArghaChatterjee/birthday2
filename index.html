@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Happy birthday project</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <h2>Click this card</h2>
+<div class="body">
+ <div class="birthdayCard">
+<div class="cardFront">
+    <!-- <h3 class="happy">HAPPY BIRTHDAY PORI</h3> -->
+    <img class="bt" src="bt.png" alt="">
+</div>
+<div class="cardInside">
+    <div class="overlay">
+        <h3 class="back">শুভ জন্মদিন লেদু 😘❤️</h3>
+        <p>প্রিয় হাবলী 😘❤️</p> 
+        <p> জন্মদিনে অনেক অনেক ভালোবাসা 🥰❤️যেদিন আমি তোমার সাথে প্রথম দেখা করেছি সেই দিনটা ছিল আমার জীবনের সবচেয়ে প্রিয় দিন 😊। আমি বুঝতে পারিনি কিভাবে সময় টা নদীর স্রোতের মতো পেরিয়েগেলো 🫠,আশা করি এভাবেই আমরা আমাদের বাকি জীবনটা একসাথে পার করেদোবো👩🏻‍❤‍👨🏻|
+          আশা করছি আমরা খুব তাড়াতাড়ি দেখা করবো 😘আর জানয়তো যে লিখতে খুব একটা পারিনা, তাও চেষ্টা করলাম লিখে মনের ভাবটা প্রকাশ করার 😅। লিখে অতটা বোঝাতে পারলাম নাকি জানিনা, কিন্তু অনেক ভালোবাসি তোমায় 😘❤️🥰| জড়িয়ে ধরার অপেক্ষায়🫂</p>
+                  <p class="name">তোমার হাবলা 🥰❤️</p>
+        <p class="name">তোমার হাবলা 🥰❤️</p>
+    </div>
+  </div>
+</div>
+<h3> <a href="https://drive.google.com/file/d/1--WLlse6tRIHdfGWYub_ERysS-pyLewi/view?usp=drivesdk"> click this, i have something special for you </a> </h3>
+</div>
+<audio id="bg-music" style="display: none;" controls>
+  <source src="birthday.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+  <script src="main.js"></script>
+  <script>
+    document.querySelector(".birthdayCard").addEventListener("click", function(){
+        // document.querySelector('audio').style.display = "initial";
+        var audio = document.getElementById('bg-music');
+        audio.play();
+})
+  </script>
+</body>
+</html>

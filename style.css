@@ -1,0 +1,172 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("background.jpg");
+  background-position: bottom;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+h2 {
+
+  font-family: "montserrat";
+  animation: 1s blink linear infinite;
+  display: flex;
+  justify-content: center;
+}
+
+.birthdayCard {
+  position: relative;
+  margin-top: -70px;
+
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: perspective(2500px);
+  transition: 1s;
+}
+
+.cardFront {
+  background-image: url("cake.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-color: #fff;
+  width: 17.5vw;
+  height: 28vw;
+  overflow: hidden;
+  transform-origin: left;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
+    30px 0 50px rgba(0, 0, 0, 0.4);
+  transition: 1.4s;
+}
+
+.bt {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14vw;
+}
+.overlay{
+    /* padding: 20px; */
+    position: absolute;
+    width: 17.5vw;
+    height: 28vw;
+    background-color: rgba(0, 0, 0, 0.559);
+}
+.cardInside {
+  position: absolute;
+  background-image: url("pic.jpg");
+  background-size: cover;
+  background-position: top;
+  width: 17.5vw;
+  height: 28vw;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+}
+p {
+  font-family: cursive;
+  color: #fafafa;
+  margin-left: 15px;
+  margin-right: 5px;
+  font-size: 0.9vw;
+  line-height: 1.3vw;
+}
+
+.name {
+  position: absolute;
+  left: 110px;
+  bottom: 0vw;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.back {
+  font-family: Tahoma, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  margin: 10px;
+  outline-color: #ffffff;
+  outline-style: double;
+  font-size: 1vw;
+}
+
+.birthdayCard:hover {
+  transform: perspective(2500px) rotate(5deg);
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
+    0 10px 100px rgba(0, 0, 0, 0.5);
+}
+
+.birthdayCard:hover .cardFront {
+  transform: rotateY(-160deg);
+}
+
+
+@keyframes blink {
+  0% {
+    color: white;
+  }
+
+  20% {
+    color: rgb(255, 255, 105);
+  }
+
+  40% {
+    color: rgb(82, 255, 203);
+  }
+
+  60% {
+    color: rgb(85, 100, 218);
+  }
+
+  80% {
+    color: rgb(210, 241, 131);
+  }
+
+  100% {
+    color: rgb(27, 66, 1);
+  }
+}
+@media screen and (max-width: 500px){
+  body{ 
+
+    background-image: url("back.jpg");
+    overflow: hidden;
+  }
+  .birthdayCard, .cardFront, .cardInside, .overlay{
+    width: 300px;
+    height: 467px;
+    
+  }
+ p, .back {
+    font-size: 3.5vw;
+   line-height: 20px; 
+
+
+}
+  .bt{
+    width: 70vw;
+  }
+
+  .body h3 a{
+    font-family: "montserrat";
+    position: absolute;
+    bottom: 19vw;
+    text-decoration: none;
+    font-size: 4.5vw;
+    left: 5vw;
+    color: #fafafa;
+    /* transform: translate(-50%, -50%); */
+  }
+  
+
+}
